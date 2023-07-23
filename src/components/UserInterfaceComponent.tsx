@@ -106,7 +106,7 @@ function UserInterfaceComponent() {
 
   const [instantProps, setInstantProps] = useState<IInstantProps>({
     instant: instantRef.current,
-    instantMin: new Date("2022-01-01").getTime(),
+    instantMin: new Date("2020-01-01").getTime(),
     instantMax: new Date("2023-07-22").getTime(),
     instantDif: TimeUtil.MILLISECONDS_PER____DAY,
     handleInstantChange
