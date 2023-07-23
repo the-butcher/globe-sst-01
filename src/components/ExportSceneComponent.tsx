@@ -132,7 +132,7 @@ function ExportSceneComponent(props: IExportSceneProps) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ minHeight: '5px' }}></div>
-            <Tooltip title="Ausschnitt speichern [f]">
+            <Tooltip title="capture frame [f]">
               <span>
                 <IconButton onClick={() => onScreenshotRequested()} style={{ width: '30px', height: '28px', color: 'var(--color-text)' }}>
                   <AddAPhoto />
@@ -140,7 +140,7 @@ function ExportSceneComponent(props: IExportSceneProps) {
               </span>
             </Tooltip>
             <div style={{ minHeight: '2px' }}></div>
-            <Tooltip title="Ausschnitt löschen">
+            <Tooltip title="delete frame">
               <span>
                 <IconButton onClick={handleFrameDelete} style={{ width: '30px', height: '28px', color: 'var(--color-text)' }}>
                   <Delete />
@@ -154,7 +154,7 @@ function ExportSceneComponent(props: IExportSceneProps) {
 
           {/* bottom line where paging and export is done */}
 
-          <Tooltip title="Vorherigen Ausschnitt anzeigen">
+          <Tooltip title="previous frame">
             <span>
               <IconButton onClick={handleFrameIndexDecr} style={{ width: '30px', height: '28px' }} disabled={frameIndex === 0} >
                 <KeyboardArrowLeft style={{ width: '21px', height: '21px', color: frameIndex > 0 ? 'var(--color-text)' : '#303030' }} />
@@ -164,7 +164,7 @@ function ExportSceneComponent(props: IExportSceneProps) {
           <Select key={'frameDelay'} onChange={handleDelayChange} disabled={frameCount <= 1} style={{ width: '76px', fontSize: '14px', paddingTop: '2px' }} variant='standard' value={frameDelay.toString()}>
             {items}
           </Select>
-          <Tooltip title="Nächsten Ausschnitt anzeigen">
+          <Tooltip title="next frame">
             <span>
               <IconButton onClick={handleFrameIndexIncr} style={{ width: '30px', height: '28px' }} disabled={frameIndex >= frameCount - 1}>
                 <KeyboardArrowRight style={{ width: '21px', height: '21px', color: frameIndex < frameCount - 1 ? 'var(--color-text)' : '#303030' }} />
@@ -173,7 +173,7 @@ function ExportSceneComponent(props: IExportSceneProps) {
           </Tooltip>
           <div style={{ flexGrow: '10' }}></div>
 
-          <Tooltip title={frameCount === 1 ? "Als PNG exportieren" : "Als GIF exportieren [g]"}>
+          <Tooltip title={frameCount === 1 ? "export as PNG" : "esport as HIG [g]"}>
             <span>
               <IconButton onClick={handleDownload} style={{ width: '30px', height: '28px', color: 'var(--color-text)' }}>
                 <Download />
