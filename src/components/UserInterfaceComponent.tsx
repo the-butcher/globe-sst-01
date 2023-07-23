@@ -84,12 +84,13 @@ function UserInterfaceComponent() {
     setGlRenderProps({
       ...glRenderProps,
       handleGlobeMethods,
+      instant: instantRef.current,
       colorGradientProps: colorGradientPropsRef.current
     });
 
   }
 
-  const instantRef = useRef<number>(new Date("2023-07-20").getTime());
+  const instantRef = useRef<number>(new Date("2023-07-22").getTime());
   const globeMethodsRef = useRef<GlobeMethods>();
   const colorGradientPropsRef = useRef<IColorGradientProps>({
     hueNeg: 0.67,
@@ -105,8 +106,8 @@ function UserInterfaceComponent() {
 
   const [instantProps, setInstantProps] = useState<IInstantProps>({
     instant: instantRef.current,
-    instantMin: new Date("2023-01-02").getTime(),
-    instantMax: new Date("2023-07-20").getTime(),
+    instantMin: new Date("2022-01-01").getTime(),
+    instantMax: new Date("2023-07-22").getTime(),
     instantDif: TimeUtil.MILLISECONDS_PER____DAY,
     handleInstantChange
   });

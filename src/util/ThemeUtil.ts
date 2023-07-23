@@ -41,89 +41,89 @@ export class ThemeUtil {
                         }
                     }
                 },
-                MuiTablePagination: {
-                    styleOverrides: {
-                        // actions: {
-                        //   color: 'rgba(193, 193, 170, 0.33)',
-                        // },
-                        select: {
-                            fontFamily,
-                            color: 'var(--color-text)',
-                        },
-                        selectLabel: {
-                            fontFamily,
-                            color: 'var(--color-text)',
-                        },
-                        displayedRows: {
-                            fontFamily,
-                            color: 'var(--color-text)',
-                        }
-                    }
-                },
-                MuiTableCell: {
-                    styleOverrides: {
-                        root: {
-                            fontFamily,
-                            color: 'var(--color-text)',
-                            borderBottom: '1px solid rgba(193, 193, 170, 0.33)',
-                            padding: '3px 8px'
-                            // fontSize: '10px',
-                        }
-                    }
-                },
-                MuiTableSortLabel: {
-                    styleOverrides: {
-                        root: {
-                            fontFamily,
-                            color: 'var(--color-text)',
-                            '&.Mui-active': {
-                                color: 'var(--color-text)',
-                            },
-                            '&.Mui-active .MuiTableSortLabel-icon': {
-                                color: 'var(--color-text)',
-                            },
-                            '&:hover': {
-                                color: 'var(--color-text)',
-                            }
-                        },
+                // MuiTablePagination: {
+                //     styleOverrides: {
+                //         // actions: {
+                //         //   color: 'rgba(193, 193, 170, 0.33)',
+                //         // },
+                //         select: {
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //         },
+                //         selectLabel: {
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //         },
+                //         displayedRows: {
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //         }
+                //     }
+                // },
+                // MuiTableCell: {
+                //     styleOverrides: {
+                //         root: {
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //             borderBottom: '1px solid rgba(193, 193, 170, 0.33)',
+                //             padding: '3px 8px'
+                //             // fontSize: '10px',
+                //         }
+                //     }
+                // },
+                // MuiTableSortLabel: {
+                //     styleOverrides: {
+                //         root: {
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //             '&.Mui-active': {
+                //                 color: 'var(--color-text)',
+                //             },
+                //             '&.Mui-active .MuiTableSortLabel-icon': {
+                //                 color: 'var(--color-text)',
+                //             },
+                //             '&:hover': {
+                //                 color: 'var(--color-text)',
+                //             }
+                //         },
 
-                    }
-                },
-                MuiButtonGroup: {
-                    styleOverrides: {
-                        grouped: {
-                            minWidth: 'unset',
-                            boxShadow: 'inherit',
-                            border: '1px solid #2b2b27',
-                            '&:not(:last-of-type):hover': {
-                                borderRightColor: 'transparent'
-                            }
-                        }
-                    }
-                },
+                //     }
+                // },
+                // MuiButtonGroup: {
+                //     styleOverrides: {
+                //         grouped: {
+                //             minWidth: 'unset',
+                //             boxShadow: 'inherit',
+                //             border: '1px solid #2b2b27',
+                //             '&:not(:last-of-type):hover': {
+                //                 borderRightColor: 'transparent'
+                //             }
+                //         }
+                //     }
+                // },
                 // @ts-ignore
-                MuiPickersDay: {
-                    styleOverrides: {
-                        root: {
-                            backgroundColor: '#44443c',
-                            fontFamily,
-                            color: 'var(--color-text)',
-                            paddingTop: '3px',
-                            '&.Mui-selected': {
-                                backgroundColor: 'var(--color-text)',
-                                color: '#44443c',
-                            },
-                            '&.Mui-selected:hover': {
-                                backgroundColor: 'var(--color-text)',
-                                color: '#44443c',
-                            },
-                            '&:focus.Mui-selected': {
-                                backgroundColor: 'var(--color-text)',
-                                color: '#44443c',
-                            }
-                        },
-                    }
-                },
+                // MuiPickersDay: {
+                //     styleOverrides: {
+                //         root: {
+                //             backgroundColor: '#44443c',
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //             paddingTop: '3px',
+                //             '&.Mui-selected': {
+                //                 backgroundColor: 'var(--color-text)',
+                //                 color: '#44443c',
+                //             },
+                //             '&.Mui-selected:hover': {
+                //                 backgroundColor: 'var(--color-text)',
+                //                 color: '#44443c',
+                //             },
+                //             '&:focus.Mui-selected': {
+                //                 backgroundColor: 'var(--color-text)',
+                //                 color: '#44443c',
+                //             }
+                //         },
+                //     }
+                // },
                 MuiSvgIcon: {
                     styleOverrides: {
                         // root: {
@@ -151,74 +151,74 @@ export class ThemeUtil {
                         },
                     },
                 },
-                MuiCard: {
-                    styleOverrides: {
-                        root: {
-                            backgroundColor,
-                            fontFamily,
-                            color: 'var(--color-text)',
-                            overflow: 'auto',
-                            minWidth: '150px',
-                            margin: '3px',
-                            padding: '0px',
-                            paddingBottom: '0px'
-                        },
-                    },
-                },
-                MuiCardContent: {
-                    styleOverrides: {
-                        root: {
-                            backgroundColor: 'unset',
-                            fontFamily,
-                            fontSize: '0.95em',
-                            overflow: 'auto',
-                            minWidth: '150px',
-                            margin: '3px',
-                            padding: '0px',
-                            paddingBottom: '0px',
-                            '&:last-child': {
-                                paddingBottom: '0px'
-                            }
-                        }
-                    },
-                },
-                MuiBreadcrumbs: {
-                    styleOverrides: {
-                        root: {
-                            fontFamily,
-                            fontSize: '14px',
-                        },
-                        ol: {
-                            flexWrap: 'nowrap'
-                        }
-                    },
-                },
-                MuiAppBar: {
-                    styleOverrides: {
-                        root: {
-                            fontFamily,
-                            width: 'unset',
-                            backgroundColor,
-                            height: '50px',
-                            padding: '0px'
-                            // padding: '6px'
-                        },
-                    },
-                },
-                MuiToolbar: {
-                    styleOverrides: {
-                        // Name of the slot
-                        root: {
-                            fontFamily,
-                            height: '48px',
-                            minHeight: '48px',
-                            color: 'var(--color-text)',
-                            '@media (min-width: 600px)': {
-                                minHeight: "48px"
-                            }
-                        },
-                    },
-                },
+                // MuiCard: {
+                //     styleOverrides: {
+                //         root: {
+                //             backgroundColor,
+                //             fontFamily,
+                //             color: 'var(--color-text)',
+                //             overflow: 'auto',
+                //             minWidth: '150px',
+                //             margin: '3px',
+                //             padding: '0px',
+                //             paddingBottom: '0px'
+                //         },
+                //     },
+                // },
+                // MuiCardContent: {
+                //     styleOverrides: {
+                //         root: {
+                //             backgroundColor: 'unset',
+                //             fontFamily,
+                //             fontSize: '0.95em',
+                //             overflow: 'auto',
+                //             minWidth: '150px',
+                //             margin: '3px',
+                //             padding: '0px',
+                //             paddingBottom: '0px',
+                //             '&:last-child': {
+                //                 paddingBottom: '0px'
+                //             }
+                //         }
+                //     },
+                // },
+                // MuiBreadcrumbs: {
+                //     styleOverrides: {
+                //         root: {
+                //             fontFamily,
+                //             fontSize: '14px',
+                //         },
+                //         ol: {
+                //             flexWrap: 'nowrap'
+                //         }
+                //     },
+                // },
+                // MuiAppBar: {
+                //     styleOverrides: {
+                //         root: {
+                //             fontFamily,
+                //             width: 'unset',
+                //             backgroundColor,
+                //             height: '50px',
+                //             padding: '0px'
+                //             // padding: '6px'
+                //         },
+                //     },
+                // },
+                // MuiToolbar: {
+                //     styleOverrides: {
+                //         // Name of the slot
+                //         root: {
+                //             fontFamily,
+                //             height: '48px',
+                //             minHeight: '48px',
+                //             color: 'var(--color-text)',
+                //             '@media (min-width: 600px)': {
+                //                 minHeight: "48px"
+                //             }
+                //         },
+                //     },
+                // },
                 MuiSelect: {
                     styleOverrides: {
                         icon: {
@@ -226,22 +226,22 @@ export class ThemeUtil {
                         }
                     }
                 },
-                MuiInput: {
-                    styleOverrides: {
-                        // Name of the slot
-                        root: {
-                            fontFamily,
-                            fontSize: '14px',
-                            color: 'var(--color-text)',
-                            '&:after': {
-                                borderBottom: '2px solid var(--color-text)'
-                            }
-                        },
-                        input: {
-                            padding: '0px'
-                        }
-                    },
-                },
+                // MuiInput: {
+                //     styleOverrides: {
+                //         // Name of the slot
+                //         root: {
+                //             fontFamily,
+                //             fontSize: '14px',
+                //             color: 'var(--color-text)',
+                //             '&:after': {
+                //                 borderBottom: '2px solid var(--color-text)'
+                //             }
+                //         },
+                //         input: {
+                //             padding: '0px'
+                //         }
+                //     },
+                // },
                 MuiMenuItem: {
                     styleOverrides: {
                         root: {
@@ -313,22 +313,22 @@ export class ThemeUtil {
                 //         }
                 //     }
                 // },
-                MuiFormControl: {
-                    styleOverrides: {
-                        root: {
-                            // width: '100%'
-                        }
-                    }
-                },
-                MuiFormControlLabel: {
-                    styleOverrides: {
-                        label: {
-                            fontFamily,
-                            fontSize: '10px',
-                            color: 'var(--color-text)'
-                        }
-                    }
-                }
+                // MuiFormControl: {
+                //     styleOverrides: {
+                //         root: {
+                //             // width: '100%'
+                //         }
+                //     }
+                // },
+                // MuiFormControlLabel: {
+                //     styleOverrides: {
+                //         label: {
+                //             fontFamily,
+                //             fontSize: '10px',
+                //             color: 'var(--color-text)'
+                //         }
+                //     }
+                // }
             },
         });
 

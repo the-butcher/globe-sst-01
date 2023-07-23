@@ -1,44 +1,32 @@
-// import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-
-// import DateAdapter from '@mui/lab/AdapterDateFns';
+import { FormControl, MenuItem, Select } from '@mui/material';
 import { useState } from "react";
 import { IInstantProps } from "./IInstantProps";
 
 function DatePickerComponent(props: IInstantProps) {
 
-  const { handleInstantChange } = props;
-  const [callbackTimeout, setCallbackTimeout] = useState<number>(-1);
+  // const { handleInstantChange } = props;
+  // const [callbackTimeout, setCallbackTimeout] = useState<number>(-1);
 
-  /**
-   * fires twice upon change for unknown reasons
-   * there timeout implemented to catch first call and fire upon second
-   * @param date
-   */
-  const handleInstantChange2 = (date: Date | null) => {
-    window.clearTimeout(callbackTimeout);
-    const _callbackTimeout = window.setTimeout(() => {
-      handleInstantChange(date!.getTime());
-    }, 10);
-    setCallbackTimeout(_callbackTimeout);
-  }
+  const [year, setYear] = useState<number>(2023);
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <DatePicker
-        label={'"month" and "year"'} views={['year']}
-        value={new Date(props.instant)}
-        minDate={new Date("2022-01-01")}
-        maxDate={new Date("2023-07-23")}
-        onChange={handleInstantChange2}
+    <FormControl >
+      <Select
+        disabled
+        sx={{ fontSize: '14px', fontFamily: 'Courier Prime Sans', fontStyle: 'plain', padding: '11px' }}
+        value={year}
+        size='small'
+        variant='standard'
+        onChange={(e) => {
+          setYear(e.target.value as number)
+        }}
+        disableUnderline
+        inputProps={{ 'aria-label': 'Without label' }}
+      >
+        <MenuItem value="2023">2023</MenuItem>
 
-      // inputFormat={'dd.MM.yyyy'}
-      // mask={'__.__.____'}
-      // renderInput={(params) => <TextField style={{ margin: '10px', marginRight: '24px' }} size="small" {...params} variant="standard" />}
-      />
-    </LocalizationProvider>
+      </Select>
+    </FormControl >
   );
 
 }
